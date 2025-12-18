@@ -189,15 +189,20 @@
                 text-decoration: none;
             }
 
+            /* Don't show URLs after links when printing */
             .contact-info a:after {
-                content: " (" attr(href) ")";
-                font-size: 0.8em;
-                color: #666;
+                content: none !important;
+            }
+
+            /* Hide browser print headers/footers */
+            @page {
+                margin: 1cm;
             }
         }
 
         @page {
             margin: 1cm;
+            size: A4;
         }
     </style>
 </head>
