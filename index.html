@@ -258,15 +258,15 @@
             }
 
             /* ATS/print density: compact toward 2-3 pages, single-column text preserved */
-            body { font-size: 9.5pt; line-height: 1.25; }
+            body { font-size: 9pt; line-height: 1.2; }
             .container { padding: 0; }
             header { padding-bottom: 8px; margin-bottom: 10px; }
             h1 { font-size: 19pt; margin-bottom: 3px; }
             .subtitle { font-size: 10.5pt; margin-bottom: 6px; }
             .contact-info { font-size: 8.5pt; gap: 10px; }
-            h2 { font-size: 12pt; margin-top: 12px; margin-bottom: 5px; padding-bottom: 3px; }
-            .summary { margin-bottom: 10px; line-height: 1.35; }
-            .experience-item, .project-item, .education-item { margin-bottom: 8px; }
+            h2 { font-size: 12pt; margin-top: 9px; margin-bottom: 4px; padding-bottom: 3px; }
+            .summary { margin-bottom: 8px; line-height: 1.3; }
+            .experience-item, .project-item, .education-item { margin-bottom: 6px; }
             ul { margin-top: 3px; margin-left: 16px; }
             li { margin-bottom: 1px; }
             .skills { gap: 8px; }
@@ -574,6 +574,14 @@
                     <a href="https://github.com/bgokden/place-extractor-mcp" class="date">github.com/bgokden/place-extractor-mcp</a>
                 </div>
                 <p>MCP (Model Context Protocol) server that gives AI agents and assistants (Claude Desktop, Claude Code, Cursor) a multilingual place-extraction tool — cities, countries, regions, and landmarks across 13 languages — backed by the mDeBERTa/ONNX models below.</p>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-title">synthspan — Synthetic NER Data Generator</div>
+                    <a href="https://github.com/bgokden/synthspan" class="date">github.com/bgokden/synthspan</a>
+                </div>
+                <p>Zero-dependency Python library and CLI that generates synthetic labeled data for NER / token classification from templates and gazetteers, with balancing and span-preserving typo augmentation — the data-generation approach behind the place-extractor models.</p>
             </div>
 
             <div class="project-item">
