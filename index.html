@@ -251,6 +251,34 @@
             @page {
                 margin: 1cm;
             }
+
+            /* ATS/print density: compact toward 2-3 pages, single-column text preserved */
+            body { font-size: 10pt; line-height: 1.3; }
+            .container { padding: 0; }
+            header { padding-bottom: 8px; margin-bottom: 10px; }
+            h1 { font-size: 19pt; margin-bottom: 3px; }
+            .subtitle { font-size: 10.5pt; margin-bottom: 6px; }
+            .contact-info { font-size: 8.5pt; gap: 10px; }
+            h2 { font-size: 12pt; margin-top: 12px; margin-bottom: 5px; padding-bottom: 3px; }
+            .summary { margin-bottom: 10px; line-height: 1.35; }
+            .experience-item, .project-item, .education-item { margin-bottom: 8px; }
+            ul { margin-top: 3px; margin-left: 16px; }
+            li { margin-bottom: 1px; }
+            .skills { gap: 8px; }
+            .skill-category { min-width: 160px; }
+
+            /* keep entries and their headings intact across pages */
+            .experience-item, .education-item, .project-item, .skill-category {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+            h2 {
+                page-break-after: avoid;
+                break-after: avoid;
+            }
+            header {
+                page-break-after: avoid;
+            }
         }
 
         @page {
@@ -277,7 +305,7 @@
         <section class="summary">
             <h2>Professional Summary</h2>
             <p>
-                Full-stack AI/ML & Data Engineer who builds and ships GenAI applications and production ML systems end-to-end, fast and cost-efficiently. Works independently on AI agents, voice agents,
+                Full-stack AI/ML & Data Engineer who builds and ships GenAI applications and production ML systems end-to-end, fast and cost-efficiently, using Claude and coding agents to accelerate delivery. Works independently on AI agents, voice agents,
                 and production ML for clients, and is founder of PrimAxiom Labs, an Amsterdam venture building and operating AI-driven software products. Delivered
                 multi-agent AI systems, RAG pipelines, and LLM-powered applications at Klarna (5,000+ employees), with experience across recommendation systems, NLP, and data infrastructure at Booking.com, ING, and DPG Media.
                 Led engineering at Vamp.io (acquired by CircleCI) managing a 12-person team. Open-source contributor (llama.cpp sampler, vector search)
@@ -302,7 +330,8 @@
                     <li>Build GenAI applications, agentic systems, voice agents, and production ML for clients on a contract basis</li>
                     <li>Design agentic workflows using LangGraph, Claude Agent SDK, and custom orchestrators over OpenAI, Anthropic, and open-weight models</li>
                     <li>Build voice agents integrating speech-to-text, LLM, and text-to-speech (Vapi, Retell, ElevenLabs, Deepgram) with telephony and low-latency tuning</li>
-                    <li>Technologies: Python, Go, TypeScript, LangChain, LangGraph, Vapi, Retell, PostgreSQL+pgvector, FAISS, Kubernetes, AWS, GCP</li>
+                    <li>Ship production systems fast using Claude and coding agents with agent-driven development workflows</li>
+                    <li>Technologies: Python, Go, TypeScript, Claude Code, LangChain, LangGraph, Vapi, Retell, PostgreSQL+pgvector, FAISS, Kubernetes, AWS, GCP</li>
                 </ul>
             </div>
 
@@ -559,6 +588,8 @@
                         <li>RAG (Retrieval-Augmented Generation)</li>
                         <li>Multi-Agent Systems & Agentic AI</li>
                         <li>Voice Agents (Vapi, Retell, ElevenLabs, Deepgram)</li>
+                        <li>Claude, Claude Code & AI coding agents</li>
+                        <li>Agent-driven development workflows</li>
                         <li>LangChain, LangGraph, Claude Agent SDK</li>
                         <li>Hugging Face</li>
                         <li>Model Fine-tuning (LLMs, Embeddings)</li>
