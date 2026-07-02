@@ -111,7 +111,25 @@
             border-bottom: 3px solid #2c3e50;
             padding-bottom: 20px;
             margin-bottom: 30px;
+            position: relative;
         }
+
+        .pdf-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #3498db;
+            color: #fff;
+            padding: 8px 14px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        .pdf-btn:hover { background: #2980b9; }
+
+        @media print { .pdf-btn { display: none !important; } }
 
         h1 {
             font-size: 2.5em;
@@ -295,6 +313,7 @@
 <body>
     <div class="container">
         <header>
+            <a href="/Berk_Gokden_CV.pdf" class="pdf-btn" download>⬇ Download PDF</a>
             <h1>Berk Gökden</h1>
             <div class="subtitle">AI/ML & Data Engineer | AI Agents · Voice AI · RAG · Production ML</div>
             <div class="contact-info">
@@ -623,67 +642,30 @@
                 <div class="skill-category">
                     <h3>AI/ML (High Priority)</h3>
                     <ul>
-                        <li>GenAI Application Development</li>
-                        <li>LLMs (OpenAI, Anthropic, Gemini, Qwen, Llama, Mistral)</li>
-                        <li>Cloud GenAI (Azure OpenAI, AWS Bedrock)</li>
-                        <li>RAG (Retrieval-Augmented Generation)</li>
-                        <li>Multi-Agent Systems & Agentic AI</li>
-                        <li>Voice Agents (Retell)</li>
-                        <li>Whisper (speech-to-text)</li>
-                        <li>Claude, Claude Code & AI coding agents</li>
-                        <li>Agent-driven development workflows</li>
-                        <li>LangChain, LangGraph, Claude Agent SDK</li>
-                        <li>MCP (Model Context Protocol)</li>
-                        <li>Hugging Face</li>
-                        <li>Model Fine-tuning (LLMs, Embeddings)</li>
-                        <li>Agent Evaluation & Observability (Arize, Phoenix)</li>
-                        <li>Guardrails, PII Redaction & Prompt-Injection Defense (OWASP LLM Top 10)</li>
-                        <li>NLP & Recommendation Systems</li>
-                        <li>Encoder models (BERT, DeBERTa)</li>
-                        <li>Synthetic data generation (NER)</li>
-                        <li>scikit-learn, pandas, numpy</li>
-                        <li>TensorFlow, PyTorch</li>
-                        <li>vLLM & LLM inference/serving</li>
-                        <li>llama.cpp, GGUF models</li>
-                        <li>Constrained/structured LLM decoding (grammars, JSON schema)</li>
+                        <li><strong>Agents:</strong> Multi-agent systems, RAG, MCP, LangChain/LangGraph, Claude Agent SDK, agent-driven development, Claude Code &amp; coding agents</li>
+                        <li><strong>Eval &amp; safety:</strong> Agent evaluation &amp; observability (Arize, Phoenix), guardrails, PII redaction, prompt-injection defense (OWASP LLM Top 10)</li>
+                        <li><strong>Models:</strong> LLMs (OpenAI, Anthropic, Gemini, Qwen, Llama, Mistral), fine-tuning, embeddings, encoder models (BERT, DeBERTa), Whisper, Cloud GenAI (Azure OpenAI, AWS Bedrock)</li>
+                        <li><strong>Inference:</strong> vLLM, llama.cpp/GGUF, constrained/structured decoding (grammars, JSON schema)</li>
+                        <li><strong>Voice &amp; data:</strong> Voice agents (Retell), synthetic data generation (NER), NLP &amp; recommendation, scikit-learn, pandas, PyTorch, TensorFlow</li>
                     </ul>
                 </div>
                 <div class="skill-category">
                     <h3>Languages</h3>
                     <ul>
-                        <li>Python</li>
-                        <li>Go</li>
-                        <li>TypeScript</li>
-                        <li>Scala</li>
-                        <li>Java</li>
+                        <li>Python, Go, TypeScript, Scala, Java</li>
                     </ul>
                 </div>
                 <div class="skill-category">
                     <h3>Data & Vector Search</h3>
                     <ul>
-                        <li>PostgreSQL + pgvector</li>
-                        <li>FAISS</li>
-                        <li>Annoy (contributor)</li>
-                        <li>Pinecone</li>
-                        <li>Qdrant</li>
-                        <li>ETL/ELT Pipelines</li>
-                        <li>Streaming Data Processing</li>
-                        <li>Feature Stores</li>
-                        <li>Data Warehousing</li>
-                        <li>Analytics</li>
+                        <li><strong>Vector:</strong> pgvector, FAISS, Annoy (contributor), Pinecone, Qdrant</li>
+                        <li><strong>Data:</strong> ETL/ELT, streaming, feature stores, warehousing, analytics</li>
                     </ul>
                 </div>
                 <div class="skill-category">
                     <h3>Infrastructure & Architecture</h3>
                     <ul>
-                        <li>Microservices Architecture</li>
-                        <li>Service-Oriented Architecture</li>
-                        <li>Kubernetes</li>
-                        <li>Docker</li>
-                        <li>CI/CD Pipelines</li>
-                        <li>Distributed Systems</li>
-                        <li>AWS</li>
-                        <li>GCP</li>
+                        <li>Kubernetes, Docker, CI/CD (GitHub Actions), microservices, distributed systems, AWS, GCP</li>
                     </ul>
                 </div>
             </div>
