@@ -228,6 +228,21 @@
             min-width: 200px;
         }
 
+        /* The AI/ML group is large: give it the full width and flow it into two
+           columns so the skills row stays balanced (no tall narrow strip). */
+        .skill-category.wide {
+            flex-basis: 100%;
+        }
+
+        .skill-category.wide ul {
+            column-count: 2;
+            column-gap: 30px;
+        }
+
+        .skill-category.wide li {
+            break-inside: avoid;
+        }
+
         .skill-category h3 {
             font-size: 1em;
             color: #2c3e50;
@@ -652,7 +667,7 @@
         <section class="skills">
             <h2>Technical Skills</h2>
             <div class="skills">
-                <div class="skill-category">
+                <div class="skill-category wide">
                     <h3>AI/ML (High Priority)</h3>
                     <ul>
                         <li><strong>Agents:</strong> Multi-agent orchestration, agent memory (short-term working + long-term vector-backed), RAG, MCP, tool use, LangChain/LangGraph, Claude Agent SDK, Claude Code &amp; coding agents</li>
